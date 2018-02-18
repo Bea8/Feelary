@@ -1,0 +1,234 @@
+html,
+body,
+h1, h2,
+footer, p
+{
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #89e0ac;
+}
+
+main {
+  max-width: 100%;
+  text-align: center;
+  flex: 1;
+}
+
+.artwork {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+header {
+  padding: 3em 0 10em 0;
+}
+
+header h1 {
+  font-size: 7em;
+  font-weight: bold;
+  color: white;
+  font-family: Arsenal;
+}
+
+header h2 {
+  font-size: 2.5em;
+  font-weight: 200;
+  color: white;
+  font-family: "Raleway";
+}
+
+figcaption {
+  font-family: "Arsenal";
+  color: white;
+  padding: 1em;
+  font-size: 3em;
+}
+
+/*SUN */
+
+#sun {
+  width: 15.625em;
+  height: 15.625em;
+
+}
+
+.rotate {
+  animation: rotate 50s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*SUNSET */
+#sunset {
+  width: 350px;
+  height: 250px;
+}
+
+
+.flow {
+  animation: flow 4s infinite;
+}
+
+@keyframes flow {
+  0% {
+      transform: translateX(0px);
+    }
+  50% {
+      transform: translateX(20px);
+    }
+
+  100% {
+      transform: translateX(0px);
+    }
+}
+
+/*LOVE */
+
+.cls-1 {
+  fill: #fd7676;
+}
+
+.cls-2 {
+  fill: #fb5a5a;
+}
+
+
+.red svg {
+  width: 250px;
+  height: 250px;
+}
+
+.pulse {
+  animation: pulse 1s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+
+}
+
+/*STORM */
+
+.black svg {
+  width: 250px;
+  height: 250px;
+}
+
+
+.lightning1 {
+  animation-delay: 5s;
+  animation: lightning 5s 1501.3ms infinite;
+  transform-origin: 50%;
+  fill: #ffff96;
+}
+
+@keyframes lightning {
+  0%, 20% {
+      visibility: hidden;
+      transform: scale(0.95);
+    }
+  60%, 100% {
+      visibility: visible;
+      transform: scale(1);
+    }
+}
+
+.lightning2 {
+  animation: lightning2 5s infinite;
+  transform-origin: 50%;
+  fill: #f3eb52;
+}
+
+@keyframes lightning2 {
+  0%, 20% {
+      visibility: hidden;
+      transform: scale(0.95);
+    }
+  60%, 100% {
+      visibility: visible;
+      transform: scale(1);
+    }
+}
+
+.total_eclipse *{
+  fill: #4fbb9d;
+}
+
+figure:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #4fbb9d;
+  display: block;
+  padding: 1em;
+}
+
+footer p {
+  display: inline-block;
+  color: white;
+  font-family: sans-serif;
+}
+
+@media only screen and (max-device-width : 368px) and (orientation: portrait) {
+    /* For mobile phones: */
+section.artwork {
+  flex-direction: column;
+}
+
+header {
+  padding: 1em 0 3em 0;
+}
+
+.green {
+  margin-left: -0.4em;
+}
+
+.green figcaption {
+  margin-left: 48px;
+}
+
+figure {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: 0;
+}
+
+figcaption {
+  padding: 0.5em;
+}
+}
+
+.newCol_1 {
+  background-color: #61c9f1;
+}
+.newCol_1f {
+  background-color: #45a9d0;
+}
+
+.outline {
+  stroke: white;
+  fill: inherit;
+}
