@@ -1,6 +1,6 @@
-In progress
+Ambiance app: In progress
 
-A full-stack ambiance app:
+Upgrade to full-stack:
 - React,
 - Express,
 - Unsplash API integration,
