@@ -1,3 +1,13 @@
+:root {
+    --fill: #6400a7;
+    color: #ff0074;
+}
+
+figure {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-appearance: none;
+}
+
 html,
 body,
 h1, h2,
@@ -11,8 +21,9 @@ footer, p
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  background-color: #89e0ac;
+  height: 100vh;
+  min-width: fit-content;
+  background-color: #3c215f;
 }
 
 main {
@@ -30,26 +41,23 @@ main {
 }
 
 header {
-  padding: 3em 0 10em 0;
+  padding: 3em 0 10% 0;
 }
 
 header h1 {
   font-size: 7em;
   font-weight: bold;
-  color: white;
   font-family: Arsenal;
 }
 
 header h2 {
   font-size: 2.5em;
   font-weight: 200;
-  color: white;
   font-family: "Raleway";
 }
 
 figcaption {
   font-family: "Arsenal";
-  color: white;
   padding: 1em;
   font-size: 3em;
 }
@@ -75,10 +83,13 @@ figcaption {
   }
 }
 
+
+
 /*SUNSET */
 #sunset {
   width: 350px;
   height: 250px;
+  margin-left: -5%;
 }
 
 
@@ -174,7 +185,7 @@ figcaption {
 }
 
 .total_eclipse *{
-  fill: #4fbb9d;
+  fill: var(--fill);
 }
 
 figure:hover {
@@ -182,53 +193,29 @@ figure:hover {
 }
 
 footer {
-  background-color: #4fbb9d;
+  background-color: #27163c;
   display: block;
   padding: 1em;
 }
 
 footer p {
   display: inline-block;
-  color: white;
   font-family: sans-serif;
 }
 
-@media only screen and (max-device-width : 368px) and (orientation: portrait) {
-    /* For mobile phones: */
-section.artwork {
-  flex-direction: column;
-}
 
-header {
-  padding: 1em 0 3em 0;
-}
 
-.green {
-  margin-left: -0.4em;
-}
-
-.green figcaption {
-  margin-left: 48px;
-}
-
-figure {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  outline: 0;
-}
-
-figcaption {
-  padding: 0.5em;
-}
-}
 
 .newCol_1 {
-  background-color: #61c9f1;
+  background-color: #5ee8d4;
+  color: #247a9c;
 }
 .newCol_1f {
-  background-color: #45a9d0;
+  background-color: inherit;
+  border-top: 1px solid white;
 }
 
 .outline {
-  stroke: white;
-  fill: inherit;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
 }
